@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Placements login</title>
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title></title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+
+.background{
+    background-image: url('https://images.static-collegedunia.com/public/college_data/images/appImage/1624106070Listingimage.jpg?tr=c-force');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 600px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+form img {
+            max-width: 100%; /* Adjust this value to control the maximum width of the image */
+            height: auto;
+            margin-bottom: 20px; /* Add some space below the logo */
+        }
+        input.invalid {
+            border-color: red; /* Change border color for invalid input */
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+            text-align: left; /* Align error message to the left */
+        }
+        button {
+            margin-top: 20px;
+            width: calc(100% - 20px); /* Adjusted width to accommodate borders */
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This ensures that the content is centered vertically */
+            margin: 0; /* Remove default margin to ensure full-page alignment */
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="background"></div>
+    <form onsubmit="return validateForm()"action="company with data.html" method="post">
+        <img src="https://th.bing.com/th/id/OIP.Vj4RJZF1KvFU2XhwB82StwAAAA?rs=1&pid=ImgDetMain" alt="Logo" alt="Logo">
+
+        <label for="staff login">STAFF LOGIN</label>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">password</label>
+        <input type="text" placeholder="password" id="username">
+
+        <div id="error-message" class="error-message"></div> <!-- Error message container -->
+
+        <button type="submit">Log In</button>
+        <div class="centered-text">
+            <h7><a href="register.html", target="_blank">Registered Yet?</a></h7>
+        </div>
+    </form>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username");
+            var password = document.getElementById("password");
+            var errorMessage = document.getElementById("error-message");
+
+            // Reset previous errors
+            username.classList.remove("invalid");
+            password.classList.remove("invalid");
+            errorMessage.innerHTML = "";
+
+            if (username.value === "") {
+                errorMessage.innerHTML = "Username is required!";
+                username.classList.add("invalid");
+                return false; // Prevent form submission
+            }
+
+            if (password.value === "") {
+                errorMessage.innerHTML = "Password is required!";
+                password.classList.add("invalid");
+                return false; // Prevent form submission
+            }
+
+            // Continue with form submission if validation passes
+            return true;
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

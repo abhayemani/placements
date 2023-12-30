@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Glassmorphism login Form Tutorial in html css</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    background-image: url('https://img.freepik.com/free-photo/ready-back-school_1134-12.jpg?w=900&t=st=1703762391~exp=1703762991~hmac=eadbfb812a96785d1c08038cd50ec8767a75272dbd2620abf8d8a4a94be9a324');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form {
+    height: 1875px;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Add max-width to limit the width on larger screens */
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    min-height: 1050px;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 35px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+form img {
+            max-width: 100%; /* Adjust this value to control the maximum width of the image */
+            height: auto;
+            margin-bottom: 20px; /* Add some space below the logo */
+        }
+        input.invalid {
+            border-color: red; /* Change border color for invalid input */
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+            text-align: left; /* Align error message to the left */
+        }
+        button {
+            margin-top: 20px;
+            width: calc(100% - 20px); /* Adjusted width to accommodate borders */
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="background"></div>
+    <form onsubmit="return validateForm()">
+        <br><br><br><br><br><br><br><br>
+        <br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+        <img src="https://th.bing.com/th/id/OIP.Vj4RJZF1KvFU2XhwB82StwAAAA?rs=1&pid=ImgDetMain" alt="Logo" alt="Logo">
+        <label for="MOOCS">MOOC's</label>
+<div class="input-container">
+    <input type="file" id="MOOCS" accept=".pdf,.doc,.docx">
+    <input type="text" placeholder="Additional information" id="MOOCSInfo">
+</div>
+
+        <label for="Internships">Internships</label>
+        <div class="input-container">
+            <input type="file" id="Internships" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="InternshipsInfo">
+        </div>
+        
+        <label for="Projects">Projects</label>
+        <div class="input-container">
+            <input type="file" id="Projects" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="ProjectsInfo">
+        </div>
+        
+        <label for="Hackathons">Hackathons</label>
+        <div class="input-container">
+            <input type="file" id="Hackathons" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="HackathonsInfo">
+        </div>
+        
+        <label for="Events">Events</label>
+        <div class="input-container">
+            <input type="file" id="Events" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="EventsInfo">
+        </div>
+        
+        <label for="Clubs">Clubs</label>
+        <div class="input-container">
+            <input type="file" id="Clubs" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="ClubsInfo">
+        </div>
+        
+        <label for="Patents">Patents</label>
+        <div class="input-container">
+            <input type="file" id="Patents" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="PatentsInfo">
+        </div>
+        
+        <label for="Research_Projects">Research Projects</label>
+        <div class="input-container">
+            <input type="file" id="Research_Projects" accept=".pdf,.doc,.docx">
+            <input type="text" placeholder="Additional information" id="Research_ProjectsInfo">
+        </div>
+        
+        <div id="error-message" class="error-message"></div> <!-- Error message container -->
+
+        <button type="submit">Submit</button>
+    </form>
+
+   <!--<script>
+        function validateForm() {
+            var MOOCS = document.getElementById("MOOCS");
+        var Internships = document.getElementById("Internships");
+        var Projects = document.getElementById("Projects");
+        var Hackathons = document.getElementById("Hackathons");
+        var Events = document.getElementById("Events");
+        var Clubs = document.getElementById("Clubs");
+        var Patents = document.getElementById("Patents");
+        var ResearchProjects = document.getElementById("Research_Projects");
+        var errorMessage = document.getElementById("error-message");
+
+            // Reset previous errors
+        MOOCS.classList.remove("invalid");
+        Internships.classList.remove("invalid");
+        Projects.classList.remove("invalid");
+        Hackathons.classList.remove("invalid");
+        Events.classList.remove("invalid");
+        Clubs.classList.remove("invalid");
+        Patents.classList.remove("invalid");
+        ResearchProjects.classList.remove("invalid");
+        errorMessage.innerHTML = "";
+
+          
+        if (MOOCS.value === "") {
+            errorMessage.innerHTML = "MOOC's is required!";
+            username.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+
+        if (Internships.value === "") {
+            errorMessage.innerHTML = "Internships is required!";
+            Internships.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+            
+        if (Projects.value === "") {
+            errorMessage.innerHTML = "MOOC's is required!";
+            username.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+
+        if (Hackathons.value === "") {
+            errorMessage.innerHTML = "Internships is required!";
+            Internships.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+            
+        if (Events.value === "") {
+            errorMessage.innerHTML = "MOOC's is required!";
+            username.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+
+        if (Clubs.value === "") {
+            errorMessage.innerHTML = "Internships is required!";
+            Internships.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+            
+        if (Patents.value === "") {
+            errorMessage.innerHTML = "MOOC's is required!";
+            username.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+
+        if (ResearchProjects.value === "") {
+            errorMessage.innerHTML = "Internships is required!";
+            Internships.classList.add("invalid");
+            return false; // Prevent form submission
+        }
+
+            // Continue with form submission if validation passes
+            return true;
+        }
+    </script>-->
+</body>
+</html>
